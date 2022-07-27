@@ -190,24 +190,24 @@
 
    /* Masonry
     * ---------------------------------------------------- */ 
-    var clMasonryFolio = function () {
+   var clMasonryFolio = function () {
         
-        var containerBricks = $('.masonry');
+    var containerBricks = $('.masonry');
 
-        containerBricks.imagesLoaded(function () {
-            containerBricks.masonry({
-                itemSelector: '.masonry__brick',
-                percentPosition: true,
-                resize: true
-            });
+    containerBricks.imagesLoaded(function () {
+        containerBricks.masonry({
+            itemSelector: '.masonry__brick',
+            percentPosition: true,
+            resize: true
         });
+    });
 
 
-        // layout Masonry after each image loads
-        containerBricks.imagesLoaded().progress( function() {
-            containerBricks.masonry('layout');
-        });
-    };
+    // layout Masonry after each image loads
+    //containerBricks.imagesLoaded().progress( function() {
+     //   containerBricks.masonry('layout');
+    //});
+};
 
 
    /* slick slider
@@ -587,24 +587,24 @@
 
    /* Initialize
     * ------------------------------------------------------ */
-    (function ssInit() {
+   (function ssInit() {
         
-        clPreloader();
-        clMediaElement();
-        clPrettyPrint();
-        clSearch();
-        clMobileMenu();
-        clMasonryFolio();
-        clSlickSlider();
-        clSmoothScroll();
-        clPlaceholder();
-        clAlertBoxes();
-        clAOS();
-        clAjaxChimp();
-        clBackToTop();
-        clGoogleMap();
+    clPreloader();
+    clMediaElement();
+    clPrettyPrint();
+    clSearch();
+    clMobileMenu();
+    clMasonryFolio();
+    clSlickSlider();
+    clSmoothScroll();
+    clPlaceholder();
+    clAlertBoxes();
+    clAOS();
+    clAjaxChimp();
+    clBackToTop();
+    clGoogleMap();
 
-    })();
+})();
         
 })(jQuery);
 
