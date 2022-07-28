@@ -370,10 +370,12 @@
             
     };
 
+
+
 	var clGoogleMap = function() { 
-
+        
         if (typeof google === 'object' && typeof google.maps === 'object') {
-
+            console.log("into map function")
             // 34.025866391459374, -118.24627867321341
 
             var latitude = 34.025866391459374,
@@ -404,13 +406,13 @@
                         { saturation: saturation_value }
                     ]
                 },  
-                // {	// poi stands for point of interest - don't show these lables on the map 
-                //     featureType: "poi",
-                //     elementType: "labels",
-                //     stylers: [
-                //         {visibility: "off"}
-                //     ]
-                // },
+                {	// poi stands for point of interest - don't show these lables on the map 
+                    featureType: "poi",
+                    elementType: "labels",
+                    stylers: [
+                        {visibility: "off"}
+                    ]
+                },
                 {
                     // don't show highways lables on the map
                     featureType: 'road.highway',
@@ -562,8 +564,9 @@
                 };
 
             // inizialize the map
+            console.log("map container")
             var map = new google.maps.Map(document.getElementById('map-container'), map_options);
-
+            console.log('Map inizialitated.....')
             // add a custom marker to the map				
             var marker = new google.maps.Marker({
 

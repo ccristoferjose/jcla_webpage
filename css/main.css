@@ -86,7 +86,7 @@ html, body {
 
 body {
    background: #19191b;
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
    font-size: 1.6rem;
    font-style: normal;
    font-weight: normal;
@@ -445,7 +445,7 @@ table {
    border-width: 0;
    width: 100%;
    max-width: 100%;
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
 }
 
 th, td {
@@ -661,7 +661,7 @@ select {
    border: 0;
    outline: none;
    color: #151515;
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
    font-size: 1.6rem;
    line-height: 3rem;
    max-width: 100%;
@@ -743,7 +743,7 @@ select:focus {
 }
 
 label, legend {
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
    font-size: 1.4rem;
    font-weight: bold;
    margin-bottom: .9rem;
@@ -1127,7 +1127,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
    display: block;
    margin: .6rem 0 0 0;
    font-size: 1.5rem;
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
    color: #727272;
 }
 
@@ -1642,7 +1642,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .format-quote cite, .format-link cite {
    display: block;
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
    font-size: 1.5rem;
    font-style: normal;
    line-height: 1.6;
@@ -2248,7 +2248,7 @@ body.search-is-visible {
    display: block;
    white-space: nowrap;
    padding: 7.5px 3rem 7.5px 2rem;
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
    line-height: 18px;
    color: rgba(255, 255, 255, 0.6);
 }
@@ -3058,7 +3058,7 @@ html.no-csstransitions .featured {
    background-color: #FFFFFF;
    padding-top: 7.8rem;
    padding-bottom: 9rem;
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
    font-size: 1.5rem;
    line-height: 1.8;
 }
@@ -3385,7 +3385,7 @@ footer h4::after {
 
 .s-footer__subscribe #mc-form label {
    color: #FFFFFF;
-   font-family: "metropolis-regular", sans-serif, sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif, sans-serif;
    font-size: 1.3rem;
    padding: 0 2rem;
 }
@@ -3639,7 +3639,7 @@ footer h4::after {
  * ------------------------------------------------------------------- */
 .s-content__tags {
    margin-top: 6rem;
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
 }
 
 .s-content__tags span {
@@ -3674,7 +3674,7 @@ footer h4::after {
 
 .s-content__tags .s-content__tag-list a {
    display: inline-block;
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
    font-size: 1.3rem;
    line-height: inherit;
    color: #7f7f7f;
@@ -4033,7 +4033,7 @@ footer h4::after {
 }
 
 .comment__meta {
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "KantumruyPro-Regular", sans-serif;
    font-size: 1.45rem;
    line-height: 3rem;
    font-style: normal;
