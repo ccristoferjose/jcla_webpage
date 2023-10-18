@@ -1719,13 +1719,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * # pageheader
  *
  * ------------------------------------------------------------------- */
-.s-pageheader {
+ .s-pageheader {
    min-height: 174px;
-   background-image: url(../images/pexels-polina-kovaleva-6786959.jpg);
-   background-repeat: no-repeat;
-   background-position: center center;
+   background-color: #FFFFFF; /* Este es un ejemplo de un color 'off-white' */
+   background-image: none; /* Se elimina la imagen de fondo */
    position: relative;
-}
+ }
+ 
 
 .s-pageheader::before {
    display: block;
