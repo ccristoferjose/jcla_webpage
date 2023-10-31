@@ -1,0 +1,19 @@
+.custom-section {
+    background-image: url(../images/wallpaper/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 15rem;
+}
+
+.customheader {
+}
+
+.customheader > h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.customheader > h1 {
+    font-size: 20px;
+    color: white;
+}
