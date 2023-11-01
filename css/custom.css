@@ -17,3 +17,13 @@
     font-size: 20px;
     color: white;
 }
+
+.handcraft-section {
+    background-color: white;
+    padding: 5rem 0;
+}
+
+.loader > span {
+    color: white;
+    font-weight: bolder;
+}
