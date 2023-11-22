@@ -446,6 +446,11 @@ textarea {
    width: 16.66667%;
 }
 
+/* Nuevo estilo para que cada columna ocupe un tercio del ancho */
+.col-third {
+   width: 33.33333%;
+}
+
 .col-three,
 .col-1-4 {
    width: 25%;
@@ -604,6 +609,14 @@ textarea {
 /* ------------------------------------------------------------------- 
  * ## mobile devices
  * ------------------------------------------------------------------- */
+
+/* Estilo para dispositivos móviles para que las columnas ocupen el 100% del ancho */
+@media only screen and (max-width: 768px) {
+   .md-col-full {
+       width: 100%;
+   }
+}
+
 @media only screen and (max-width: 600px) {
    .row {
       width: auto;

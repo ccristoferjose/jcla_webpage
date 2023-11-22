@@ -5,17 +5,16 @@
     padding-bottom: 15rem;
 }
 
-.customheader {
-}
-
 .customheader > h2 {
     font-size: 30px;
     color: white;
+    letter-spacing: 2px; /* Ajuste este valor según lo desee */
 }
 
 .customheader > h1 {
     font-size: 20px;
     color: white;
+    letter-spacing: 1.5px; /* Ajuste este valor según lo desee */
 }
 
 .handcraft-section {
