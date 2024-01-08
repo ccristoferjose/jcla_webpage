@@ -588,6 +588,57 @@
     };
 
 
+document.getElementById('cForm').addEventListener('submit', async function (e) {
+    e.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+    // Obtén los valores de los campos del formulario
+    const name = document.getElementById('cName').value;
+    const email = document.getElementById('cEmail').value;
+    const website = document.getElementById('cWebsite').value;
+    const message = document.getElementById('cMessage').value;
+    
+    const confirmationMessage = document.getElementById('confirmation-message');
+
+    try {
+        // Realiza una solicitud POST al endpoint de tu servidor
+        const response = await fetch('http://34.102.15.24:3000/api/user/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "name": name,
+                "email": email,
+                "website": website,
+                "text": message
+            })
+        });
+
+        if (response.status === 200) {
+            // Muestra un mensaje de éxito
+            confirmationMessage.textContent = 'Correo enviado exitosamente.';
+            confirmationMessage.style.color = 'green';
+
+            // Limpia los campos del formulario
+            document.getElementById('cName').value = '';
+            document.getElementById('cEmail').value = '';
+            document.getElementById('cWebsite').value = '';
+            document.getElementById('cMessage').value = '';
+        } else {
+            // Muestra un mensaje de error
+            confirmationMessage.textContent = 'No se pudo enviar el correo.';
+            confirmationMessage.style.color = 'red';
+        }
+    } catch (error) {
+        console.error('Error al enviar el correo:', error);
+        // Muestra un mensaje de error
+        confirmationMessage.textContent = 'Hubo un error al enviar el correo.';
+        confirmationMessage.style.color = 'red';
+    }
+});
+
+    
+
    /* Initialize
     * ------------------------------------------------------ */
    (function ssInit() {
