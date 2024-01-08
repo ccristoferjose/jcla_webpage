@@ -601,7 +601,7 @@ document.getElementById('cForm').addEventListener('submit', async function (e) {
 
     try {
         // Realiza una solicitud POST al endpoint de tu servidor
-        const response = await fetch('http://34.102.15.24:3000/api/user/contact', {
+        const response = await fetch('https://34.102.15.24:3000/api/user/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
