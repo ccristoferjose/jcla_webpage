@@ -588,54 +588,62 @@
     };
 
 
-document.getElementById('cForm').addEventListener('submit', async function (e) {
-    e.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
-
-    // Obtén los valores de los campos del formulario
-    const name = document.getElementById('cName').value;
-    const email = document.getElementById('cEmail').value;
-    const website = document.getElementById('cWebsite').value;
-    const message = document.getElementById('cMessage').value;
+    document.getElementById('cForm').addEventListener('submit', async function (e) {
+        e.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
     
-    const confirmationMessage = document.getElementById('confirmation-message');
-
-    try {
-        // Realiza una solicitud POST al endpoint de tu servidor
-        const response = await fetch('https://api.jclastudios.com/api/user/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                "name": name,
-                "email": email,
-                "website": website,
-                "text": message
-            })
-        });
-
-        if (response.status === 200) {
-            // Muestra un mensaje de éxito
-            confirmationMessage.textContent = 'Message sent successfully';
-            confirmationMessage.style.color = 'green';
-
-            // Limpia los campos del formulario
-            document.getElementById('cName').value = '';
-            document.getElementById('cEmail').value = '';
-            document.getElementById('cWebsite').value = '';
-            document.getElementById('cMessage').value = '';
-        } else {
+        // Obtén los valores de los campos del formulario
+        const name = document.getElementById('cName').value;
+        const email = document.getElementById('cEmail').value;
+        const website = document.getElementById('cWebsite').value;
+        const message = document.getElementById('cMessage').value;
+        
+        const confirmationMessage = document.getElementById('confirmation-message');
+    
+        // Validar que el campo "name" y "message" estén llenos
+        if (name.trim() === '' || message.trim() === '' || email.trim() === '') {
+            confirmationMessage.textContent = 'Please fill in the required fields.';
+            confirmationMessage.style.color = 'red';
+            return; // Detener la ejecución si los campos requeridos están vacíos
+        }
+    
+        try {
+            // Realiza una solicitud POST al endpoint de tu servidor
+            const response = await fetch('https://api.jclastudios.com/api/user/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    "name": name,
+                    "email": email,
+                    "website": website,
+                    "text": message
+                })
+            });
+    
+            if (response.status === 200) {
+                // Muestra un mensaje de éxito
+                confirmationMessage.textContent = 'Message sent successfully';
+                confirmationMessage.style.color = 'green';
+    
+                // Limpia los campos del formulario
+                document.getElementById('cName').value = '';
+                document.getElementById('cEmail').value = '';
+                document.getElementById('cWebsite').value = '';
+                document.getElementById('cMessage').value = '';
+            } else {
+                // Muestra un mensaje de error
+                confirmationMessage.textContent = 'Something went wrong, please try again.';
+                confirmationMessage.style.color = 'red';
+            }
+        } catch (error) {
+            console.error('Error sending message:', error);
             // Muestra un mensaje de error
-            confirmationMessage.textContent = 'Something went bad try again.';
+            confirmationMessage.textContent = 'Error sending message.';
             confirmationMessage.style.color = 'red';
         }
-    } catch (error) {
-        console.error('Error al enviar el correo:', error);
-        // Muestra un mensaje de error
-        confirmationMessage.textContent = 'Error sending message.';
-        confirmationMessage.style.color = 'red';
-    }
-});
+    });
+    
 
     
 
