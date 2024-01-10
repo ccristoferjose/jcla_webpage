@@ -605,7 +605,6 @@
             confirmationMessage.style.color = 'red';
             return; // Detener la ejecución si los campos requeridos están vacíos
         }
-    
         try {
             // Realiza una solicitud POST al endpoint de tu servidor
             const response = await fetch('https://api.jclastudios.com/api/user/contact', {
