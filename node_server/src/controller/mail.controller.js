@@ -29,38 +29,39 @@ async function sende(name, email, subject, message) {
     });
 
     let htmlBody = `<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacto desde el sitio web</title>
-    </head>
-    <body>
-        <h1>Contacto desde el sitio web</h1>
-        <p>Has recibido un mensaje de un visitante del sitio web con la siguiente información:</p>
-        <ul>
-            <li><strong>Nombre:</strong> ${name}</li>
-            <li><strong>Correo electrónico:</strong> ${email}</li>
-            <li><strong>Mensaje:</strong> ${message}</li>
-        </ul>
-        <p>Por favor, responde a este mensaje lo antes posible.</p>
-    </body>
-    </html>`;
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>J & C LA Studios</title>
+        </head>
+        <body>
+            <h1>Your message information:</h1>
+            <ul>
+                <li><strong>Name:</strong> ${name}</li>
+                <li><strong>Email electrónico:</strong> ${email}</li>
+                <li><strong>Message:</strong> ${message}</li>
+            </ul>
+            <p>Thank you for reaching us. We will be contacting you as soon as possible.</p>
+        </body>
+        </html>`;
+
 
     let info = {
-        from: `J & C LA Studios <${email}>`, // dirección del remitente
-        to: email, // lista de receptores
+        from: `J & C LA Studios <info@jclastudios.com>`, // dirección del remitente
+        to: [email, "jose.chitay@jclastudios.com"], // lista de receptores (cliente y dirección de destino)
         subject: subject, // línea de asunto
         html: htmlBody, // cuerpo HTML del correo electrónico
     };
 
     try {
         const result = await transporter.sendMail(info);
-        console.log("Correo electrónico enviado correctamente: " + result.response);
+        console.log("Email sent successfully: " + result.response);
     } catch (error) {
-        console.error("Error al enviar el correo electrónico:", error);
+        console.error("Error sending email:", error);
     }
+    
 }
 
   

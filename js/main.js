@@ -601,7 +601,7 @@ document.getElementById('cForm').addEventListener('submit', async function (e) {
 
     try {
         // Realiza una solicitud POST al endpoint de tu servidor
-        const response = await fetch('https://34.102.15.24:3000/api/user/contact', {
+        const response = await fetch('https://api.jclastudios.com/api/user/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -616,7 +616,7 @@ document.getElementById('cForm').addEventListener('submit', async function (e) {
 
         if (response.status === 200) {
             // Muestra un mensaje de éxito
-            confirmationMessage.textContent = 'Correo enviado exitosamente.';
+            confirmationMessage.textContent = 'Message sent successfully';
             confirmationMessage.style.color = 'green';
 
             // Limpia los campos del formulario
@@ -626,13 +626,13 @@ document.getElementById('cForm').addEventListener('submit', async function (e) {
             document.getElementById('cMessage').value = '';
         } else {
             // Muestra un mensaje de error
-            confirmationMessage.textContent = 'No se pudo enviar el correo.';
+            confirmationMessage.textContent = 'Something went bad try again.';
             confirmationMessage.style.color = 'red';
         }
     } catch (error) {
         console.error('Error al enviar el correo:', error);
         // Muestra un mensaje de error
-        confirmationMessage.textContent = 'Hubo un error al enviar el correo.';
+        confirmationMessage.textContent = 'Error sending message.';
         confirmationMessage.style.color = 'red';
     }
 });
