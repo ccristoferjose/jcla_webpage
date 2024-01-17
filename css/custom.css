@@ -1,20 +1,9 @@
 .custom-section {
-    background-image: url(../images/wallpaper/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 15rem;
-}
-
-.customheader > h2 {
-    font-size: 30px;
-    color: white;
-    letter-spacing: 2px; /* Ajuste este valor según lo desee */
-}
-
-.customheader > h1 {
-    font-size: 20px;
-    color: white;
-    letter-spacing: 1.5px; /* Ajuste este valor según lo desee */
+  background-image: url(../images/wallpaper/AdobeStock_637598390.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 15rem;
 }
 
 .handcraft-section {
@@ -44,7 +33,7 @@
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 50%; 
     text-align: center;
     position: relative;
   }

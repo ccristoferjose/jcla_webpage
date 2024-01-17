@@ -852,6 +852,15 @@ input[type="button"]:focus {
    color: #000000;
    outline: 0;
 }
+/*
+   btn pageheader
+*/
+.btn-bottom-left {
+   bottom: 0;
+   left: 0;
+   margin: 0;
+}
+
 
 /* button primary
  * ------------------------------------------------- */
@@ -917,6 +926,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
    border: 0;
    padding: 0;
 }
+
+
 
 
 
@@ -1175,7 +1186,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .pgn .current, .pgn .current:hover {
    background-color: #151515;
-   color: #FFFFFF;
+   color: #a71616;
 }
 
 .pgn .inactive, .pgn .inactive:hover {
@@ -1720,17 +1731,24 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
  .s-pageheader {
+   
    min-height: 174px;
    background-color: #FFFFFF; /* Este es un ejemplo de un color 'off-white' */
    background-image: none; /* Se elimina la imagen de fondo */
    position: relative;
+ }
+
+ .s-pageheader > h1,h2 {
+   font-size: 2.4rem;
+   margin-bottom: 2.1rem;
+ 
  }
  
 
 .s-pageheader::before {
    display: block;
    content: "";
-   position: absolute;
+   position: relative;
    top: 0;
    left: 0;
    width: 100%;
@@ -1757,10 +1775,42 @@ button::-moz-focus-inner, input::-moz-focus-inner {
    padding: 0 20px;
 }
 
+.header-text {
+   font-size: 20px;
+   text-align: right;
+   max-width: 500px;
+   color: #FFFFFF;
+   padding-top: 20px;
+   
+}
+
 .pageheader-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    overflow: hidden;
-   padding: 0 75px;
-   max-width: 1350px;
+   height: 100%;
+   max-width: 1000;
+   color: #FFFFFF;
+}
+
+.pageheader-content h2  {
+   font-size: 40px;
+   color: rgb(255, 255, 255);
+   letter-spacing: 2px; /* Ajuste este valor según lo desee */
+}
+
+.pageheader-content h1 {
+   font-size: 30px;
+   color: rgb(255, 255, 255);
+   letter-spacing: 1px; /* Ajuste este valor según lo desee */
+}
+
+.pageheader-button {
+   flex-direction: row;
+   justify-content: bottom;
+   align-items: left;
+   margin-top: 450px;
 }
 
 
@@ -3953,20 +4003,28 @@ footer h4::after {
 
 }
 
-@media only screen and (max-width:400px) {
-   .s-content--narrow .s-content__header, .s-content__main, .s-content__media {
-      padding-left: 0;
-      padding-right: 0;
+@media only screen and (max-width: 400px) {
+   .s-content--narrow .s-content__header,
+   .s-content__main,
+   .s-content__media {
+       padding-left: 0;
+       padding-right: 0;
    }
 
    .s-content--narrow .s-content__header {
-      margin-top: 0;
+       margin-top: 0;
    }
 
    .s-content__header-title {
-      font-size: 3.3rem;
+       font-size: 2.3rem;
    }
+}
 
+@media only screen and (max-width:300px) {
+   .s-content__header-title {
+      font-size: 3.2rem;
+   }
+   
 }
 
 

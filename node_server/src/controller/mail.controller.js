@@ -37,10 +37,10 @@ async function sende(name, email, subject, message) {
             <title>J & C LA Studios</title>
         </head>
         <body>
-            <h1>Your message information:</h1>
+            <h3>Your message information:</h3>
             <ul>
                 <li><strong>Name:</strong> ${name}</li>
-                <li><strong>Email electrónico:</strong> ${email}</li>
+                <li><strong>Email:</strong> ${email}</li>
                 <li><strong>Message:</strong> ${message}</li>
             </ul>
             <p>Thank you for reaching us. We will be contacting you as soon as possible.</p>

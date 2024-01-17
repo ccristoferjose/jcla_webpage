@@ -119,12 +119,24 @@
         </header> <!-- header -->
 
 
-        <div class="pageheader-content row customheader">
-            <h2>We are experts into transforming fabrics into fashion</h2>
-            <h1>Elevate your production with our top-rated sewing company in Los Angeles, specializing in small, medium
-                and large-scale projects. With over 20 years of experience, we have proudly developed high-quality
-                clothing for major brands and renowned individuals through contractors.</h1>
+        <div class="pageheader-content row ">
+            <h2 class="align-center">We are experts in transforming fabrics to fashion</h2>
+            <div class="row">
+                <div class="col-seven align-center pageheader-button">
+                    <form
+                        action="#contact">
+                        <input type="submit" value="Contact Us" />
+                    </form>
+                </div>
+                <div class = "col-five header-text ">
+                    <h1>Elevate your production with our top-rated sewing company in Los Angeles, specializing in small, medium
+                    and large-scale projects. With over 20 years of experience, we have proudly developed high-quality
+                    clothing for major brands and renowned individuals through contractors.</h1>  
+                </div>
+            </div>
 
+           
+            
         </div>
         <!-- end pageheader-content row -->
 
@@ -155,30 +167,6 @@
         </div>
     </section>
 
-    <!-- <section class="services">
-        <h2>OUR SERVICES</h2>
-        <div class="service">
-            <h3>Custom Crafted Patterns</h3>
-            <p>Our skilled team in Los Angeles excels in creating unique patterns tailored to your brand.</p>
-        </div>
-        <div class="service">
-            <h3>Local Expertise</h3>
-            <p>As a Los Angeles-based company, we understand the local fashion landscape and market trends, helping your designs resonate with the local fashion scene.</p>
-        </div>
-        <div class="service">
-            <h3>Quality Assurance</h3>
-            <p>We are dedicated to delivering top-quality services. Our rigorous quality control ensures your project meets and exceeds your expectations.</p>
-        </div>
-        <div class="service">
-            <h3>Quick Turnaround</h3>
-            <p>In the fast-paced world of fashion, we deliver your patterns and services promptly, helping you meet deadlines in the competitive LA fashion industry.</p>
-        </div>
-        <div class="service">
-            <h3>Comprehensive Support</h3>
-            <p>Beyond patterns, we offer a range of services to support your fashion journey. Whether you're launching a clothing line, boutique, or e-commerce store, we're here to support you at every step.</p>
-        </div>
-    </section> -->
-
 
     <section class="s-content">
         <div class="s-content__header col-full">
@@ -203,21 +191,6 @@
                             </div>
                             <h1 class="entry__title"><a>Trouser by J&C LA Studios</a></h1>
                         </div>
-                        <!-- <div class="entry__excerpt">
-                            <p>
-                                a garment that epitomizes timeless style and exceptional craftsmanship. Tailored to
-                                perfection with an innovative needle technique,
-                                this trouser is made from premium stretch fabric, offering a versatile piece that
-                                effortlessly transitions from daytime business to evening sophistication.
-                                Crafted under the personal oversight of our founder, this trouser stands as a testament
-                                to our unwavering commitment to quality and the latest trends in the industry.
-                            </p>
-                        </div>
-                        <div class="entry__meta">
-                            <span class="entry__meta-links">
-                                <a>Trouser</a>
-                            </span>
-                        </div> -->
                     </div>
 
                 </article> <!-- end article -->
@@ -238,20 +211,7 @@
                             <h1 class="entry__title"><a>Work Jacket</a></h1>
 
                         </div>
-                        <!-- <div class="entry__excerpt">
-                            <p>
-                                Introducing the Durable Artisan Work Jacket, a game-changing garment that reflects the
-                                quality and craftsmanship synonymous with J&C LA Studios.
-                                Meticulously designed and created from high-grade canvas fabric, this work jacket is
-                                built to last, offering both style and unparalleled durability
-                            </p>
-                        </div>
-                        <div class="entry__meta">
-                            <span class="entry__meta-links">
-                                <a>Denim</a>
-                                <a>Jacket</a>
-                            </span>
-                        </div> -->
+
                     </div>
 
                 </article> <!-- end article -->
@@ -440,31 +400,28 @@
                 </div> 
         <!-- end row -->
 
-                <h3>Say Hello.</h3>
+                <h3>Contact us for a quote.</h3>
 
                 <form name="cForm" id="cForm" method="post" action="">
                     <fieldset>
 
                         <div class="form-field">
-                            <input name="cName" type="text" id="cName" class="full-width" placeholder="Your Name"
-                                value="">
+                            <input name="cName" type="text" id="cName" class="full-width" placeholder="Your Name" value="" required>
                         </div>
-
+                        
                         <div class="form-field">
-                            <input name="cEmail" type="text" id="cEmail" class="full-width" placeholder="Your Email"
-                                value="">
+                            <input name="cEmail" type="text" id="cEmail" class="full-width" placeholder="Your Email" value="" required>
                         </div>
-
+                        
                         <div class="form-field">
-                            <input name="cWebsite" type="text" id="cWebsite" class="full-width" placeholder="Website"
-                                value="">
+                            <input name="cWebsite" type="text" id="cWebsite" class="full-width" placeholder="Website" value="">
+                            <!-- No "required" attribute because this field is optional -->
                         </div>
-
+                        
                         <div class="message form-field">
-                            <textarea name="cMessage" id="cMessage" class="full-width"
-                                placeholder="Your Message"></textarea>
+                            <textarea name="cMessage" id="cMessage" class="full-width" placeholder="Your Message" required></textarea>
                         </div>
-
+                        
                         <div id="confirmation-message"></div>
 
                         <button type="submit" class="submit btn btn--primary full-width">Submit</button>

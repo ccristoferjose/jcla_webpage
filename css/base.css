@@ -824,6 +824,17 @@ textarea {
  * ## mobile devices
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
+
+   .col-seven,
+   .col-five {
+      width: 100%;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+   }
+
+
    .block-mob-1-6 .col-block {
       width: 16.66667%;
    }
@@ -868,7 +879,16 @@ textarea {
 
 /* stack columns on small mobile devices
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
+
+   .custom-section {
+      /* background-image: none !important; */
+      background-size:  contain auto !important;
+      background-repeat: no-repeat !important;
+      background-position: left center !important;
+      /* padding-bottom: top center !important; */
+   }
+
    .stack .col-block {
       width: 100% !important;
       float: none !important;
@@ -876,6 +896,7 @@ textarea {
       margin-left: 0;
       margin-right: 0;
    }
+   
 }
 
 
@@ -948,10 +969,15 @@ textarea {
    float: right;
 }
 
+
 .align-center {
    margin-left: auto;
    margin-right: auto;
    text-align: center;
+}
+
+.align-bottom {
+   vertical-align: bottom;
 }
 
 /*# sourceMappingURL=base.css.map */
