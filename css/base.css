@@ -886,8 +886,8 @@ textarea {
       background-size:  contain auto !important;
       background-repeat: no-repeat !important;
       background-position: left center !important;
-      /* padding-bottom: top center !important; */
    }
+   
 
    .stack .col-block {
       width: 100% !important;
