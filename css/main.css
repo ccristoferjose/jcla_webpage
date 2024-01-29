@@ -1880,6 +1880,31 @@ button::-moz-focus-inner, input::-moz-focus-inner {
    margin-right: 0;
 }
 
+.header__social_dark {
+   list-style: none;
+   font-size: 23px;
+   line-height: 1;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   left: 20px;
+   top: 12px;
+}
+
+.header__social_dark a {
+   color: #434141;
+}
+
+.header__social_dark li {
+   display: inline-block;
+   margin-right: 5px;
+   padding-left: 0;
+}
+
+.header__social_dark li:last-child {
+   margin-right: 0;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## header-toggle
@@ -2059,7 +2084,7 @@ body.search-is-visible {
    line-height: 21px;
    content: "Search";
    display: block;
-   color: #FFFFFF;
+   color: #aea9a9;
    float: left;
    padding-right: 33px;
 }
@@ -2102,6 +2127,10 @@ body.search-is-visible {
    }
 
    .header__social {
+      display: none;
+   }
+
+   .header__social_dark{
       display: none;
    }
 
@@ -2153,6 +2182,21 @@ body.search-is-visible {
       font-size: 3.4rem;
    }
 
+   .s-content .row,
+   .s-content .col-seven,
+   .s-content .col-five
+   {
+      width: 100%;
+      float: none;
+      display: block;
+
+   }
+
+   .s-content img {
+      width: 100%;
+      height: auto;
+   }
+
 }
 
 @media only screen and (max-width:400px) {
@@ -2188,9 +2232,10 @@ body.search-is-visible {
  * ## main navigation
  * ------------------------------------------------------------------- */
 .header__nav-wrap {
-   margin-top: 15px;
-   border-top: 1px solid rgba(255, 255, 255, 0.04);
-   padding-top: 15px;
+   margin-top: 5px;
+   border-top: 1px solid rgba(25, 25, 25, 0.351);
+   border-bottom: 1px solid rgb(25, 25, 25, 0.351);
+   padding-top: 5px;
 }
 
 .header__nav-wrap a {
@@ -2232,7 +2277,7 @@ body.search-is-visible {
 
 .header__nav li a {
    display: block;
-   color: rgba(255, 255, 255, 0.6);
+   color: rgba(0, 0, 0, 0.6);
    line-height: 39px;
 }
 
@@ -2259,7 +2304,7 @@ body.search-is-visible {
 }
 
 .header__nav li:hover > a, .header__nav li:focus > a {
-   color: #FFFFFF;
+   color: #000000;
 }
 
 .header__nav li:hover li, .header__nav li:focus li {
@@ -2267,7 +2312,7 @@ body.search-is-visible {
 }
 
 .header__nav li.current > a {
-   color: #FFFFFF;
+   color: #000000;
 }
 
 .header__nav li ul {
@@ -3345,6 +3390,7 @@ footer h4 {
    line-height: 1.286;
    text-transform: uppercase;
    letter-spacing: .25rem;
+   padding-top: 3.6rem;
    padding-bottom: 4.2rem;
    color: #FFFFFF;
    margin-top: 0;
