@@ -23,8 +23,8 @@ async function sende(name, email, subject, message) {
     let transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: "chris.chitay@gmail.com",
-            pass: "ycbd hjel ptxp ccel",
+            user: "info@jclastudios.com",
+            pass: "gesw zeya zwbu xsvm",
         },
     });
 

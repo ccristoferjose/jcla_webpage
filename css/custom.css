@@ -1,9 +1,19 @@
 .custom-section {
-  background-image: url(../images/wallpaper/AdobeStock_637598390.jpeg);
+  background-image: url(../images/wallpaper/AdobeStock_211696928.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top 12rem;
   background-size: cover;
-  padding-bottom: 15rem;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+.header {
+  background-color: transparent; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
 }
 
 .handcraft-section {
