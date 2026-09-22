@@ -1,0 +1,142 @@
+{
+  "bomber-negro": {
+    "src": "/images/gallery/bomber-negro.webp",
+    "srcSmall": "/images/gallery/bomber-negro-sm.webp",
+    "width": 1200,
+    "height": 1024,
+    "widthSmall": 600
+  },
+  "chaqueta-warren": {
+    "src": "/images/gallery/chaqueta-warren.webp",
+    "srcSmall": "/images/gallery/chaqueta-warren-sm.webp",
+    "width": 1200,
+    "height": 1122,
+    "widthSmall": 600
+  },
+  "bomber-denim": {
+    "src": "/images/gallery/bomber-denim.webp",
+    "srcSmall": "/images/gallery/bomber-denim-sm.webp",
+    "width": 1200,
+    "height": 1279,
+    "widthSmall": 600
+  },
+  "bomber-denim-detalle": {
+    "src": "/images/gallery/bomber-denim-detalle.webp",
+    "srcSmall": "/images/gallery/bomber-denim-detalle-sm.webp",
+    "width": 1200,
+    "height": 1279,
+    "widthSmall": 600
+  },
+  "bomber-denim-frente": {
+    "src": "/images/gallery/bomber-denim-frente.webp",
+    "srcSmall": "/images/gallery/bomber-denim-frente-sm.webp",
+    "width": 1200,
+    "height": 916,
+    "widthSmall": 600
+  },
+  "bomber-mujer": {
+    "src": "/images/gallery/bomber-mujer.webp",
+    "srcSmall": "/images/gallery/bomber-mujer-sm.webp",
+    "width": 1200,
+    "height": 1053,
+    "widthSmall": 600
+  },
+  "chaqueta-lozano": {
+    "src": "/images/gallery/chaqueta-lozano.webp",
+    "srcSmall": "/images/gallery/chaqueta-lozano-sm.webp",
+    "width": 1200,
+    "height": 1067,
+    "widthSmall": 600
+  },
+  "camisa-seda": {
+    "src": "/images/gallery/camisa-seda.webp",
+    "srcSmall": "/images/gallery/camisa-seda-sm.webp",
+    "width": 1200,
+    "height": 1150,
+    "widthSmall": 600
+  },
+  "camisa-manga-larga": {
+    "src": "/images/gallery/camisa-manga-larga.webp",
+    "srcSmall": "/images/gallery/camisa-manga-larga-sm.webp",
+    "width": 1200,
+    "height": 1130,
+    "widthSmall": 600
+  },
+  "falda-short": {
+    "src": "/images/gallery/falda-short.webp",
+    "srcSmall": "/images/gallery/falda-short-sm.webp",
+    "width": 1200,
+    "height": 1146,
+    "widthSmall": 600
+  },
+  "cargo-frente": {
+    "src": "/images/gallery/cargo-frente.webp",
+    "srcSmall": "/images/gallery/cargo-frente-sm.webp",
+    "width": 1200,
+    "height": 1634,
+    "widthSmall": 600
+  },
+  "cargo-espalda": {
+    "src": "/images/gallery/cargo-espalda.webp",
+    "srcSmall": "/images/gallery/cargo-espalda-sm.webp",
+    "width": 1200,
+    "height": 1664,
+    "widthSmall": 600
+  },
+  "pantalon-cinco-bolsas": {
+    "src": "/images/gallery/pantalon-cinco-bolsas.webp",
+    "srcSmall": "/images/gallery/pantalon-cinco-bolsas-sm.webp",
+    "width": 1200,
+    "height": 1607,
+    "widthSmall": 600
+  },
+  "pantalon-cinco-bolsas-espalda": {
+    "src": "/images/gallery/pantalon-cinco-bolsas-espalda.webp",
+    "srcSmall": "/images/gallery/pantalon-cinco-bolsas-espalda-sm.webp",
+    "width": 1200,
+    "height": 1668,
+    "widthSmall": 600
+  },
+  "pantalon-carpintero": {
+    "src": "/images/gallery/pantalon-carpintero.webp",
+    "srcSmall": "/images/gallery/pantalon-carpintero-sm.webp",
+    "width": 1200,
+    "height": 1716,
+    "widthSmall": 600
+  },
+  "short-nylon": {
+    "src": "/images/gallery/short-nylon.webp",
+    "srcSmall": "/images/gallery/short-nylon-sm.webp",
+    "width": 1200,
+    "height": 1039,
+    "widthSmall": 600
+  },
+  "taller": {
+    "src": "/images/content/taller.webp",
+    "srcSmall": "/images/content/taller-sm.webp",
+    "width": 1600,
+    "height": 1067,
+    "widthSmall": 800
+  },
+  "alteraciones": {
+    "src": "/images/content/alteraciones.webp",
+    "srcSmall": "/images/content/alteraciones-sm.webp",
+    "width": 1600,
+    "height": 1067,
+    "widthSmall": 800
+  },
+  "patronaje": {
+    "src": "/images/content/patronaje.webp",
+    "srcSmall": "/images/content/patronaje-sm.webp",
+    "width": 1600,
+    "height": 1143,
+    "widthSmall": 800
+  },
+  "confeccion": {
+    "src": "/images/content/confeccion.webp",
+    "srcSmall": "/images/content/confeccion-sm.webp",
+    "width": 1600,
+    "height": 1143,
+    "widthSmall": 800
+  }
+}
