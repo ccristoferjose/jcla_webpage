@@ -28,12 +28,12 @@ export const site = {
 
   /** TODO: completar con la ubicación real en Guatemala. */
   location: {
-    city: "Ciudad de Guatemala",
+    city: "San José Pinula",
     region: "Guatemala",
     country: "GT",
     countryName: "Guatemala",
     /** Zonas donde se presta servicio a domicilio. */
-    serviceArea: ["Ciudad de Guatemala", "Mixco", "Villa Nueva", "Santa Catarina Pinula"],
+    serviceArea: ["San José Pinula", "Fraijanes", "Santa Catarina Pinula"],
   },
 
   /** TODO: confirmar horarios de atención en Guatemala. */
