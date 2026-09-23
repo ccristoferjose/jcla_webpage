@@ -43,7 +43,7 @@ export const es = {
     eyebrow: "Servicio de costura · Guatemala",
     title: "Tu ropa, hecha a tu medida.",
     subtitle:
-      "Más de 30 años ajustando y confeccionando prendas. Alteraciones que se notan en cómo te queda, no en la costura. Con servicio a domicilio previa coordinación.",
+      "Más de 30 años de experiencia ajustando y confeccionando prendas. Alteraciones precisas y acabados profesionales para que cada prenda se adapte perfectamente a ti, conservando su estilo y apariencia original. Servicio a domicilio disponible con previa coordinación.",
     ctaPrimary: "Agendar mi fitting",
     ctaSecondary: "Ver servicios",
     imageAlt:
